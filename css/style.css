@@ -15,27 +15,44 @@ body{
     max-width: 1280px;
     margin: 0 auto;
 }
+/* Flexbox */
+.flex{
+    display: flex;
+}
+.ai-center{
+    align-items: center;
+}
+.jc-between{
+    justify-content: space-between;
+}
 
 /* List */
 .header-list li{
     display: inline-block;
+    padding: 0 18px;
 }
 .header-list li a{
-    padding: 0 18px;
     text-decoration: none;
     color: #8c8e8f;
 }
 
+/* Buttons */
+.btn{
+    padding: 12px 22px;
+    border-radius: 12px;
+}
+.btn.primaryBtn{
+    background-color: #f0f0f0;
+    color: #191c1f;
+}
+.btn.secondaryBtn{
+    background-color: #191c1f;
+    color: #fff;
+    font-weight: bold;
+}
+
 /* SITE HEADER */
-.site-header .container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 /* Left Header */
-.left-header{
-    display: flex;
-}
 .left-header > svg{
     margin-right: 40px;
 }
