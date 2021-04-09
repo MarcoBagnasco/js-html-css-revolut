@@ -27,33 +27,70 @@ body{
 }
 
 /* List */
-.header-list li{
+.header-list > li{
+    position: relative;
     display: inline-block;
     padding: 0 18px;
+    cursor: pointer;
+}
+.header-list > li:hover,
+.header-list li a:hover{
+    color: #191c1f;
 }
 .header-list li a{
     text-decoration: none;
     color: #8c8e8f;
 }
 
+.dropdown-menu{
+    position: absolute;
+    top:180%;
+    left: 0;
+    width: 165px;
+    padding: 22px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+}
+.dropdown-menu li{
+    display: block;
+    margin-bottom: 30px;
+    padding: 0;
+    list-style: none;
+    color: #8c8e8f;
+}
+.dropdown-menu li:last-child{
+    margin-bottom: 0;
+}
+.dropdown-menu li a:hover{
+    color: #191c1f;
+}
+
+
 /* Buttons */
 .btn{
     padding: 12px 22px;
+    font-weight: bold;
     border-radius: 12px;
+    cursor: pointer;
 }
 .btn.primaryBtn{
     background-color: #f0f0f0;
     color: #191c1f;
 }
+.btn.primaryBtn:hover{
+    background-color: #ebebeb;
+}
 .btn.secondaryBtn{
     background-color: #191c1f;
     color: #fff;
-    font-weight: bold;
+}
+.btn.secondaryBtn:hover{
+    background-color: #3e4043;
 }
 
 /* SITE HEADER */
 /* Left Header */
-.left-header > svg{
+.left-header > a{
     margin-right: 40px;
 }
 .left-header .header-list li:first-child a{
