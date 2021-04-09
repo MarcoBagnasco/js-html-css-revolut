@@ -43,6 +43,7 @@ body{
 }
 
 .dropdown-menu{
+    display: none;
     position: absolute;
     top:180%;
     left: 0;
