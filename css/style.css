@@ -14,11 +14,32 @@ h1{
     font-size: 4.7em;
     color: #000;
 }
+h2{
+    margin-bottom: 80px;
+    font-size: 2.5em;
+    color: #000;
+}
 
 /* UTILITIES */
 .container{
     max-width: 1280px;
     margin: 0 auto;
+}
+/* Backgroud */
+.bg-orange{
+    background-color: #ee7a40;
+}
+.bg-pink{
+    background-color: #ed5b7b;
+}
+.bg-purple{
+    background-color: #805cf5;
+}
+.bg-blue{
+    background-color: #007dfb;;
+}
+.bg-cyan{
+    background-color: #00abfa;
 }
 /* Flexbox */
 .flex{
@@ -168,6 +189,9 @@ h1{
 
 /* SITE MAIN */
 /* Hero */
+.hero{
+    margin-bottom: 100px;
+}
 .hero .hero-left,
 .hero .hero-right{
     width: 40%;
@@ -237,4 +261,106 @@ h1{
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
     cursor: pointer;
+}
+
+/* SLIDING SECT. */
+.sliding{
+    margin-bottom: 60px;
+    text-align: center;
+    overflow-x: hidden;
+}
+.sliding .sliding-cards{
+    width: 6200px;
+    flex-wrap: wrap;
+    animation: slide 20s linear infinite;
+}
+.sliding-cards:hover{
+    animation-play-state: paused;
+}
+@keyframes slide{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-3440px);
+    }
+}
+/* Card */
+.sliding-cards .card{
+    position: relative;
+    margin: 0 17px;
+    padding: 35px 25px;
+    height: 360px;
+    width: 310px;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    color: #fff;
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    border-radius: 13px;
+    overflow: hidden;
+}
+.card .layover{
+    display: none;
+    position: absolute;
+    padding: 120px 25px 20px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5;
+    background-color: rgba(0, 0, 0, .3);
+}
+.card .layover::after{
+    content:'Learn more';
+    position: absolute;
+    bottom: 30px;
+    width: 83%;
+    padding: 12px 0;
+    display: block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    background-color: #fff;
+    border-radius: 18px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.card:hover .layover{
+    display: block;
+}
+.card.card-1{
+    background-image: url('https://assets.revolut.com/media/web-stories/Junior.png');
+}
+.card.card-2{
+    background-image: url('https://assets.revolut.com/media/web-stories/Budgeting.png');
+}
+.card.card-3{
+    background-image: url('https://assets.revolut.com/media/web-stories/Vaults.png');
+}
+.card.card-4{
+    background-image: url('https://assets.revolut.com/media/web-stories/Crypto.png');
+}
+.card.card-5{
+    background-image: url('https://assets.revolut.com/media/web-stories/Commodities.png');
+}
+.card.card-6{
+    background-image: url('https://assets.revolut.com/media/web-stories/Donations.png');
+}
+.card.card-7{
+    background-image: url('https://assets.revolut.com/media/web-stories/OpenAccount.png');
+}
+.card.card-8{
+    background-image: url('https://assets.revolut.com/media/web-stories/SecurityProducts.png');
+}
+.card.card-9{
+    background-image: url('https://assets.revolut.com/media/web-stories/Cards.png');
+}
+.card.card-10{
+    background-image: url('https://assets.revolut.com/media/web-stories/GroupBills.png');
 }
