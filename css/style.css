@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 body{
-    padding-top: 50px;
+    padding-top: 200px;
     font-family: 'Roboto', sans-serif;
-    color: #8c8e8f;
+    color: #a1a2a3;
+}
+h1{
+    margin-bottom: 30px;
+    font-size: 4.7em;
+    color: #000;
 }
 
 /* UTILITIES */
@@ -21,6 +26,9 @@ body{
 }
 .ai-center{
     align-items: center;
+}
+.jc-center{
+    justify-content: center;
 }
 .jc-between{
     justify-content: space-between;
@@ -50,6 +58,7 @@ body{
     left: 0;
     width: 185px;
     padding: 22px 20px;
+    background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0, 0, 0, .1);
 }
@@ -120,27 +129,112 @@ body{
     border-radius: 12px;
     cursor: pointer;
 }
-.btn.primaryBtn{
+.btn.primary-btn{
     background-color: #f0f0f0;
     color: #191c1f;
 }
-.btn.primaryBtn:hover{
+.btn.primary-btn:hover{
     background-color: #ebebeb;
 }
-.btn.secondaryBtn{
+.btn.secondary-btn{
     background-color: #191c1f;
     color: #fff;
 }
-.btn.secondaryBtn:hover{
+.btn.secondary-btn:hover{
     background-color: #3e4043;
+}
+.btn.big-btn{
+    padding: 17px 20px;
 }
 
 /* SITE HEADER */
 /* Left Header */
+.site-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 10;
+}
 .left-header > a{
     margin-right: 40px;
 }
 .left-header .header-list li:first-child a{
     color: #191c1f;
     font-weight: bold;
+}
+
+/* SITE MAIN */
+/* Hero */
+.hero .hero-left,
+.hero .hero-right{
+    width: 40%;
+}
+
+/* Left */
+.hero .hero-left{
+    padding-top: 40px;
+}
+.hero-left .hero-text{
+    font-size: 18px;
+    line-height: 1.5;
+    color: #8b959e;
+}
+/* Phone Number */
+.hero-left .phone-number{
+    margin: 45px 0;
+}
+.phone-number input[type="text"]{
+    margin-right: 15px;
+    padding-bottom: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    border: 0;
+    border-bottom: 1px solid #ced2d6;
+}
+.phone-number #prefix{
+    width: 80px;
+}
+.phone-number #phone::placeholder{
+    color: #a1a3a4;
+}
+.phone-number span.btn{
+    font-size: 18px;
+    color: #909192;
+    background-color: #3e4043;
+    cursor: not-allowed;
+}
+/* Open Account */
+.hero-left .open-account{
+    color: #000;
+}
+.hero-left .open-account svg{
+    width: 17px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+/* Right */
+.hero .hero-right{
+    position: relative;
+    margin-left: 150px;
+}
+.hero-right img{
+    width: 100%;
+}
+.hero-right .play{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85px;
+    height: 85px;
+    font-size: 26px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }

@@ -9,6 +9,9 @@
     <!-- STYLE -->
     <link rel="stylesheet" href="./css/style.css">
 
+    <!-- FONTAWSOME -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous'/>
+
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -133,11 +136,46 @@
                             <li><a href="#">Developer APIs</a></li>
                         </ul>
                     </li>
-                    <li><a href="#" class="btn primaryBtn">Sign in</a></li>
+                    <li><a href="#" class="btn primary-btn">Sign in</a></li>
                 </ul>
-                <span class="btn secondaryBtn">Get the App</span>
+                <span class="btn secondary-btn">Get the App</span>
             </div>
         </div>
     </header>
+
+    <!-- SITE MAIN -->
+    <main class="site-main">
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container flex">
+                <!-- Left -->
+                <div class="hero-left">
+                    <h1>Get more from your money</h1>
+                    <p class="hero-text">Exchange money with no hidden fees. Buy crypto, gold and manage your money with spending analytics. Join over 15 million Revolut customers.</p>
+                    <!-- Phone Number -->
+                    <div class="phone-number">
+                        <input id="prefix" type="text" placeholder="+39">
+                        <input id="phone" type="text" placeholder="Phone Number">
+                        <span class="btn secondary-btn big-btn">Get Started</span>
+                    </div>
+                    <!-- Open Account -->
+                    <div class="open-account">
+                        <svg viewBox="0 0 24 24" size="18" class="icon-base__IconBase-sc-1efctcf-0 bGrAuP">
+                            <g fill="currentColor"><path fill="currentColor" d="M2 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10S2 17.514 2 12zm11-5a1 1 0 1 0-2 0v5.423a1 1 0 0 0 .5.866l3.83 2.211a1 1 0 0 0 1-1.732L13 11.845V7z"></path></g>
+                        </svg>
+                        Open an account in minute
+                    </div>
+                </div>
+
+                <!-- Right -->
+                <div class="hero-right">
+                    <img src="https://assets.revolut.com/media/index/EU/home.png" alt="phone revolut">
+                    <div class="play flex ai-center jc-center">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

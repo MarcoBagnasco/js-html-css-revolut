@@ -21,7 +21,6 @@ $(document).ready(function() {
 
     //Click everywhere for hide
     $(document).click(function(e) {
-        console.log(e);
         if(!$(e.target).is(dropDown)){
             dropMenu.hide(); //For hide display flex features menu
         }
