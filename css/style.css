@@ -191,6 +191,7 @@ h2{
 /* Hero */
 .hero{
     margin-bottom: 100px;
+    padding: 0 30px;
 }
 .hero .hero-left,
 .hero .hero-right{
@@ -272,7 +273,7 @@ h2{
 .sliding .sliding-cards{
     width: 6200px;
     flex-wrap: wrap;
-    animation: slide 20s linear infinite;
+    animation: slide 50s linear infinite;
 }
 .sliding-cards:hover{
     animation-play-state: paused;
@@ -363,4 +364,18 @@ h2{
 }
 .card.card-10{
     background-image: url('https://assets.revolut.com/media/web-stories/GroupBills.png');
+}
+
+/* RESPONSIVE */
+/* Screen < 1160px */
+@media screen and (max-width: 1159px){
+    .hero-left .phone-number span{
+        display: block;
+    }
+}
+/* Screen < 970px */
+@media screen and (max-width: 969px){
+    .right-header .header-list{
+        display: none;
+    }
 }
